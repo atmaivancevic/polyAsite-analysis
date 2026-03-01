@@ -3,6 +3,8 @@
 ### Programs Used:
 
 - **Bedtools** v2.28.0 https://bedtools.readthedocs.io/en/latest/
+- **Deeptools** v3.0.1 https://deeptools.readthedocs.io/en/develop/index.html
+- **Fimo** v5.1.0 https://meme-suite.org/meme/doc/fimo.html
 
 
 ---
