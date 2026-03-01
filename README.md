@@ -11,15 +11,37 @@
 
 ### 1. PAS expression analysis
 
-Uses PolyASite 3.0 Single Cell Expression Data: <add link>
+Identifies L2 subfamily elements in the human genome that contain expressed polyadenylation sites (PAS), in order to visualize PAS signal enrichment at the 3' end.
 
-   1) [flye_assembly.sbatch](genome_assembly/flye_assembly.sbatch)  
-   2) [medaka_consensus.sbatch](genome_assembly/medaka_consensus.sbatch)  
+- [polyasite_download_and_convert.sbatch](PAS_expression_analysis/polyasite_download_and_convert.sbatch) — downloads the PolyASite 3.0 atlas and converts to a bigWig weighted by average RPM expression
+- [L2_overlap_PAS.sbatch](PAS_expression_analysis/L2_overlap_PAS.sbatch) — overlaps L2 subfamily elements with expressed PAS sites (expression score > 0.9, window = 10bp)
+- [L2_expand_coordinates.sbatch](PAS_expression_analysis/L2_expand_coordinates.sbatch) — expands each L2 element to its theoretical full-length coordinates using Dfam repeat annotations; requires [subset_dfam_for_L2_of_interest.sh](PAS_expression_analysis/subset_dfam_for_L2_of_interest.sh) and [repeats_createExpandedRepeatFile_dfam.py](PAS_expression_analysis/repeats_createExpandedRepeatFile_dfam.py)
+- [deeptools_heatmap.sbatch](PAS_expression_analysis/deeptools_heatmap.sbatch) — generates a deeptools heatmap of polyAsite RPM signal across full-length L2 elements, anchored at the TSS to generate [L2s_with_expressed_PAS.pdf](PAS_expression_analysis/L2s_with_expressed_PAS.pdf)
+
+This analysis requires the following files, or equivalent:
+
+**atlas.clusters.3.0.GRCh38.GENCODE_42.bed**: BED file of PAS sites with single-cell expression scores, downloaded from PolyASite 3.0: https://polyasite.unibas.ch/atlas_sc
+
+**hg38.dfam.fa.out**: RepeatMasker output file containing Dfam repeat annotations for hg38, used to determine the relative position of each L2 fragment within its consensus sequence
+
+**hg38.main.chrom.sizes**: chromosome sizes for hg38 genome
+
+**L2_elements/**: directory containing BED files for each L2 subfamily (L2, L2a, L2b, L2c, L2d, L2d2), included in this repository
 
 ### 2. PAS motif analysis
 
-   1) [bbduk_trim.sbatch](genome_assembly/bbduk_trim.sbatch)  
-   2) [bwa_mem_align.sbatch](genome_assembly/bwa_mem_align.sbatch)
+Identifies canonical polyadenylation signal hexamers across the human genome using FIMO, independent of expression data, and visualizes their enrichment in L2 elements. Used as an unbiased complement to the PolyASite expression-based analysis.
+
+- [fimo.sbatch](PAS_motif_analysis/fimo.sbatch) — scans the hg38 genome for PAS hexamers using FIMO and converts output to bigWig; run separately for canonical (AATAAA) and variant motifs using the provided MEME files:
+   - [canonical_PAS.meme](PAS_motif_analysis/canonical_PAS.meme) — canonical AATAAA hexamer
+   - [variant_PAS.meme](PAS_motif_analysis/variant_PAS.meme) — 11 known variant PAS hexamers (ATTAAA, AGTAAA, TATAAA, etc.)
+- [deeptools_heatmap.sbatch](PAS_expression_analysis/deeptools_heatmap.sbatch) — same script as in PAS expression analysis; run with the fimo bigWig instead
+
+This analysis requires the following files:
+
+**hg38.main.fa**: hg38 reference genome FASTA, used by FIMO to scan for motif occurrences
+
+**hg38.main.chrom.sizes**: chromosome sizes for hg38 genome
 
 ### 3. PAS within TEs
 
