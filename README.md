@@ -22,7 +22,7 @@ This analysis requires the following files, or equivalent:
 
 **atlas.clusters.3.0.GRCh38.GENCODE_42.bed**: BED file of PAS sites with single-cell expression scores, downloaded from PolyASite 3.0: https://polyasite.unibas.ch/atlas_sc
 
-**hg38.dfam.fa.out**: RepeatMasker output file containing Dfam repeat annotations for hg38, used to determine the relative position of each L2 fragment within its consensus sequence
+**hg38.dfam.fa.out**: Dfam repeat annotations for hg38 from UCSC, used to determine the relative position of each L2 fragment within its consensus sequence
 
 **hg38.main.chrom.sizes**: chromosome sizes for hg38 genome
 
