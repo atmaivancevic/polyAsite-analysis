@@ -2,10 +2,8 @@
 
 ### Programs Used
 
-- **Bedtools** v0.7.2 https://github.com/nanoporetech/dorado
-- **NanoStat** v1.6.0 https://github.com/wdecoster/nanostat 
-- **Flye** v2.9.5 https://github.com/fenderglass/Flye  
-- **Medaka** v2.0.0 https://github.com/nanoporetech/medaka  
+- **Bedtools** v2.28.0 https://bedtools.readthedocs.io/en/latest/
+
 
 ---
 
