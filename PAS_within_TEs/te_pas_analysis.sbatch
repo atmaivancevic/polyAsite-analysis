@@ -71,8 +71,8 @@ total_TEs=$(wc -l < ${outDir}/hg38.dfam.ucsc.filtered.mainChrOnly.bed)
 TEs_with_PAS=$(wc -l < ${outDir}/unique_TEs_with_PAS.bed)
 TEs_expressed=$(wc -l < ${outDir}/unique_TEs_with_PAS_0.9.bed)
 echo "Total TE loci: ${total_TEs}"
-echo "TE loci with PAS: ${TEs_with_PAS} ($(echo "scale=1; ${TEs_with_PAS}/${total_TEs}*100" | bc)%)"
-echo "TE loci with expressed PAS: ${TEs_expressed} ($(echo "scale=2; ${TEs_expressed}/${total_TEs}*100" | bc)% of all TEs)"
+echo "TE loci with PAS: ${TEs_with_PAS}"
+echo "TE loci with expressed PAS: ${TEs_expressed}"
 
 # Rank all TE-PAS by expression score and intersect with genes
 echo $(date +"[%b %d %H:%M:%S] Ranking by expression score and intersecting with genes...")
