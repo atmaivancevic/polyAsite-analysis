@@ -22,9 +22,11 @@ This analysis requires the following files, or equivalent:
 
 **atlas.clusters.3.0.GRCh38.GENCODE_42.bed**: BED file of PAS sites with single-cell expression scores, downloaded from PolyASite 3.0: https://polyasite.unibas.ch/atlas_sc
 
+**hg38.main.chrom.sizes**: chromosome sizes for the main chromosomes of the hg38 genome
+
 **hg38.dfam.fa.out**: Dfam repeat annotations for hg38 from UCSC, used to determine the relative position of each L2 fragment within its consensus sequence
 
-**hg38.main.chrom.sizes**: chromosome sizes for hg38 genome
+**hg38.dfam.info** [optional]: contains repeat divergence information for each TE subfamily
 
 **L2_elements/**: directory containing BED files for each L2 subfamily (L2, L2a, L2b, L2c, L2d, L2d2), included in this repository
 
