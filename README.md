@@ -23,5 +23,14 @@ Uses PolyASite 3.0 Single Cell Expression Data: <add link>
 
 ### PAS within TEs
 
+Identifies which TE loci in the human genome contain polyadenylation sites (PAS), and characterizes their expression levels using single-cell expression data. TEs are classified into five supergroups (LINE, SINE, LTR, DNA, Other) and overlapped with PAS sites using a 10bp window. PAS-containing TEs are further filtered for expression (average expression score > 0.9). Expressed TE-PAS loci are ranked by expression score and intersected with GENCODE gene annotations to identify which genes are associated with TE-derived PAS.
+
+This script requires the following files, or equivalent:
+
+* **hg38.dfam.ucsc.filtered.bed**: BED file containing annotation of human repeats from Dfam, downloaded from the UCSC genome browser track hub for hg38.
+
+* **gencode.v47.simple.bed**: simplified BED of GENCODE v47 gene annotations, downloaded from the UCSC genome browser track hub for hg38.
+
+* **atlas.clusters.3.0.GRCh38.GENCODE_42.bed**: BED file of PAS sites with single-cell expression scores, downloaded from PolyASite 3.0: https://polyasite.unibas.ch/atlas_sc
+
    1) [te_pas_analysis.sh](PAS_within_TEs/te_pas_analysis.sh)
-   2) [dorado_demux.sbatch](genome_assembly/dorado_demux.sbatch)
