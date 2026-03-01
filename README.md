@@ -23,7 +23,7 @@ Uses PolyASite 3.0 Single Cell Expression Data: <add link>
 
 - [te_pas_analysis.sbatch](PAS_within_TEs/te_pas_analysis.sbatch)
 - [te_pie.R](PAS_within_TEs/te_pie.R)
-- [te_bar_counts.R](PAS_within_TEs/te_bar_counts.R)
+- [te_bar_counts.R](PAS_within_TEs/TE_bar_counts.R)
 
 Identifies which TE loci in the human genome contain polyadenylation sites (PAS), and characterizes their expression levels using single-cell expression data. TEs are classified into five classes (LINE, SINE, LTR, DNA, Other) and overlapped with PAS sites using a 10bp window. PAS-containing TEs are further filtered for expression (average expression score > 0.9). Expressed TE-PAS loci are ranked by expression score and intersected with GENCODE gene annotations to identify which genes are associated with TE-derived PAS.
 
