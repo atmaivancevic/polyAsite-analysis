@@ -28,6 +28,8 @@ This analysis requires the following files, or equivalent:
 
 **L2_elements/**: directory containing BED files for each L2 subfamily (L2, L2a, L2b, L2c, L2d, L2d2), included in this repository
 
+
+
 ### 2. PAS motif analysis
 
 Identifies canonical polyadenylation signal hexamers across the human genome using FIMO, independent of expression data, and visualizes their enrichment in L2 elements. Used as an unbiased complement to the PolyASite expression-based analysis.
