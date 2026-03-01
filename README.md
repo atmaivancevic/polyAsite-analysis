@@ -16,7 +16,7 @@ Identifies L2 subfamily elements in the human genome that contain expressed poly
 - [polyasite_download_and_convert.sbatch](PAS_expression_analysis/polyasite_download_and_convert.sbatch)
 - [L2_overlap_PAS.sbatch](PAS_expression_analysis/L2_overlap_PAS.sbatch)
 - [L2_expand_coordinates.sbatch](PAS_expression_analysis/L2_expand_coordinates.sbatch), which requires [subset_dfam_for_L2_of_interest.sh](PAS_expression_analysis/subset_dfam_for_L2_of_interest.sh) and [repeats_createExpandedRepeatFile_dfam.py](PAS_expression_analysis/repeats_createExpandedRepeatFile_dfam.py)
-- [deeptools_heatmap.sbatch](PAS_expression_analysis/deeptools_heatmap.sbatch), which generates a heatmap, e.g. [L2s_with_expressed_PAS.pdf](PAS_expression_analysis/L2s_with_expressed_PAS.pdf)
+- [deeptools_heatmap.sbatch](PAS_expression_analysis/deeptools_heatmap.sbatch) to generate [L2s_with_expressed_PAS.pdf](PAS_expression_analysis/L2s_with_expressed_PAS.pdf)
 
 This analysis requires the following files, or equivalent:
 
