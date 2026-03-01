@@ -13,10 +13,10 @@
 
 Identifies L2 subfamily elements in the human genome that contain expressed polyadenylation sites (PAS), in order to visualize PAS signal enrichment at the 3' end.
 
-- [polyasite_download_and_convert.sbatch](PAS_expression_analysis/polyasite_download_and_convert.sbatch) — downloads the PolyASite 3.0 atlas and converts to a bigWig weighted by average RPM expression
-- [L2_overlap_PAS.sbatch](PAS_expression_analysis/L2_overlap_PAS.sbatch) — overlaps L2 subfamily elements with expressed PAS sites (expression score > 0.9, window = 10bp)
-- [L2_expand_coordinates.sbatch](PAS_expression_analysis/L2_expand_coordinates.sbatch) — expands each L2 element to its theoretical full-length coordinates using Dfam repeat annotations; requires [subset_dfam_for_L2_of_interest.sh](PAS_expression_analysis/subset_dfam_for_L2_of_interest.sh) and [repeats_createExpandedRepeatFile_dfam.py](PAS_expression_analysis/repeats_createExpandedRepeatFile_dfam.py)
-- [deeptools_heatmap.sbatch](PAS_expression_analysis/deeptools_heatmap.sbatch) — generates a deeptools heatmap of polyAsite RPM signal across full-length L2 elements, e.g. [L2s_with_expressed_PAS.pdf](PAS_expression_analysis/L2s_with_expressed_PAS.pdf)
+- [polyasite_download_and_convert.sbatch](PAS_expression_analysis/polyasite_download_and_convert.sbatch)
+- [L2_overlap_PAS.sbatch](PAS_expression_analysis/L2_overlap_PAS.sbatch)
+- [L2_expand_coordinates.sbatch](PAS_expression_analysis/L2_expand_coordinates.sbatch), which requires [subset_dfam_for_L2_of_interest.sh](PAS_expression_analysis/subset_dfam_for_L2_of_interest.sh) and [repeats_createExpandedRepeatFile_dfam.py](PAS_expression_analysis/repeats_createExpandedRepeatFile_dfam.py)
+- [deeptools_heatmap.sbatch](PAS_expression_analysis/deeptools_heatmap.sbatch), which generates a heatmap, e.g. [L2s_with_expressed_PAS.pdf](PAS_expression_analysis/L2s_with_expressed_PAS.pdf)
 
 This analysis requires the following files, or equivalent:
 
