@@ -33,4 +33,4 @@ This script requires the following files, or equivalent:
 
 **atlas.clusters.3.0.GRCh38.GENCODE_42.bed**: BED file of PAS sites with single-cell expression scores, downloaded from PolyASite 3.0: https://polyasite.unibas.ch/atlas_sc
 
-- [te_pas_analysis.sh](PAS_within_TEs/te_pas_analysis.sh)
+- [te_pas_analysis.sbatch](PAS_within_TEs/te_pas_analysis.sbatch)
