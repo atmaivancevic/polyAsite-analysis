@@ -9,14 +9,14 @@
 
 ---
 
-### PAS expression analysis
+### 1. PAS expression analysis
 
 Uses PolyASite 3.0 Single Cell Expression Data: <add link>
 
    1) [flye_assembly.sbatch](genome_assembly/flye_assembly.sbatch)  
    2) [medaka_consensus.sbatch](genome_assembly/medaka_consensus.sbatch)  
 
-### PAS motif analysis
+### 2. PAS motif analysis
 
    1) [bbduk_trim.sbatch](genome_assembly/bbduk_trim.sbatch)  
    2) [bwa_mem_align.sbatch](genome_assembly/bwa_mem_align.sbatch)
