@@ -29,6 +29,6 @@ This script requires the following files, or equivalent:
 
 **hg38.dfam.ucsc.filtered.bed**: BED file containing annotation of human repeats from Dfam, downloaded from the UCSC genome browser track hub for hg38.
 
-**gencode.v47.simple.bed**: simplified BED of GENCODE v47 gene annotations, downloaded from the UCSC genome browser track hub for hg38.
+**gencode.v47.simple.bed**: simplified BED of GENCODE v47 gene annotations, derived from the BED file available on UCSC.
 
 **atlas.clusters.3.0.GRCh38.GENCODE_42.bed**: BED file of PAS sites with single-cell expression scores, downloaded from PolyASite 3.0: https://polyasite.unibas.ch/atlas_sc
