@@ -47,16 +47,16 @@ This analysis requires the following files:
 
 ### 3. PAS within TEs
 
+Identifies which TE loci in the human genome contain polyadenylation sites, and characterizes their expression levels. TEs are classified into five classes (LINE, SINE, LTR, DNA, Other) and overlapped with PAS sites using a 10bp window. PAS-containing TEs are filtered for expression (average expression score > 0.9). Expressed TE-PAS loci are ranked by expression score and intersected with GENCODE gene annotations to identify which genes are associated with TE-derived PAS.
+
 - [te_pas_analysis.sbatch](PAS_within_TEs/te_pas_analysis.sbatch)
 - [te_pie.R](PAS_within_TEs/te_pie.R) to generate [te_pie.pdf](PAS_within_TEs/te_pie.pdf)
 - [te_bar_counts.R](PAS_within_TEs/TE_bar_counts.R) to generate [te_bar_counts.pdf](PAS_within_TEs/te_bar_counts.pdf)
 
-Identifies which TE loci in the human genome contain polyadenylation sites, and characterizes their expression levels. TEs are classified into five classes (LINE, SINE, LTR, DNA, Other) and overlapped with PAS sites using a 10bp window. PAS-containing TEs are filtered for expression (average expression score > 0.9). Expressed TE-PAS loci are ranked by expression score and intersected with GENCODE gene annotations to identify which genes are associated with TE-derived PAS.
-
-This script requires the following files, or equivalent:
+This analysis requires the following files, or equivalent:
 
 **hg38.dfam.ucsc.filtered.bed**: BED file containing annotation of human repeats from Dfam, downloaded from the UCSC genome browser track hub for hg38.
 
 **gencode.v47.simple.bed**: simplified BED of GENCODE v47 gene annotations, derived from the BED file on UCSC.
 
-**atlas.clusters.3.0.GRCh38.GENCODE_42.bed**: As abovem BED file of PAS sites with single-cell expression scores, downloaded from PolyASite 3.0: https://polyasite.unibas.ch/atlas_sc
+**atlas.clusters.3.0.GRCh38.GENCODE_42.bed**: As above, BED file of PAS sites with single-cell expression scores, downloaded from PolyASite 3.0: https://polyasite.unibas.ch/atlas_sc
