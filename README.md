@@ -32,5 +32,6 @@ This script requires the following files, or equivalent:
 * **gencode.v47.simple.bed**: simplified BED of GENCODE v47 gene annotations, downloaded from the UCSC genome browser track hub for hg38.
 
 * **atlas.clusters.3.0.GRCh38.GENCODE_42.bed**: BED file of PAS sites with single-cell expression scores, downloaded from PolyASite 3.0: https://polyasite.unibas.ch/atlas_sc
+  
 
    1) [te_pas_analysis.sh](PAS_within_TEs/te_pas_analysis.sh)
