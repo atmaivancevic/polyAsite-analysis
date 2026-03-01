@@ -21,8 +21,7 @@ Uses PolyASite 3.0 Single Cell Expression Data: <add link>
    1) [bbduk_trim.sbatch](genome_assembly/bbduk_trim.sbatch)  
    2) [bwa_mem_align.sbatch](genome_assembly/bwa_mem_align.sbatch)
 
-### TE-PAS contribtion analysis
+### PAS within TEs
 
-   1) [dorado_basecall.sbatch](genome_assembly/dorado_basecall.sbatch)
+   1) [te_pas_analysis.sh](PAS_within_TEs/te_pas_analysis.sh)
    2) [dorado_demux.sbatch](genome_assembly/dorado_demux.sbatch)
-   3) [nanostat.sbatch](genome_assembly/nanostat.sbatch)
