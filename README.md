@@ -32,10 +32,8 @@ This analysis requires the following files, or equivalent:
 
 Identifies canonical polyadenylation signal hexamers across the human genome using FIMO, independent of expression data, and visualizes their enrichment in L2 elements. Used as an unbiased complement to the PolyASite expression-based analysis.
 
-- [fimo.sbatch](PAS_motif_analysis/fimo.sbatch) — scans the hg38 genome for PAS hexamers using FIMO and converts output to bigWig; run separately for canonical (AATAAA) and variant motifs using the provided MEME files:
-   - [canonical_PAS.meme](PAS_motif_analysis/canonical_PAS.meme) — canonical AATAAA hexamer
-   - [variant_PAS.meme](PAS_motif_analysis/variant_PAS.meme) — 11 known variant PAS hexamers (ATTAAA, AGTAAA, TATAAA, etc.)
-- [deeptools_heatmap.sbatch](PAS_expression_analysis/deeptools_heatmap.sbatch) — same script as in PAS expression analysis; run with the fimo bigWig instead
+- [fimo.sbatch](PAS_motif_analysis/fimo.sbatch), which uses [canonical_PAS.meme](PAS_motif_analysis/canonical_PAS.meme)
+- [deeptools_heatmap.sbatch](PAS_motif_analysis/deeptools_heatmap.sbatch) to generate [L2s_with_canonical_PAS.pdf](PAS_motif_analysis/L2s_with_canonical_PAS.pdf)
 
 This analysis requires the following files:
 
