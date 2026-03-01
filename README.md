@@ -7,7 +7,7 @@
 - **Fimo** v5.1.0 https://meme-suite.org/meme/doc/fimo.html
 
 
----
+--------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 1. PAS expression analysis
 
@@ -28,7 +28,7 @@ This analysis requires the following files, or equivalent:
 
 **L2_elements/**: directory containing BED files for each L2 subfamily (L2, L2a, L2b, L2c, L2d, L2d2), included in this repository
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 2. PAS motif analysis
 
@@ -42,6 +42,8 @@ This analysis requires the following files:
 **hg38.main.fa**: hg38 reference genome FASTA, used by FIMO to scan for motif occurrences
 
 **hg38.main.chrom.sizes**: chromosome sizes for hg38 genome
+
+--------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 3. PAS within TEs
 
