@@ -24,7 +24,7 @@ This analysis requires the following files, or equivalent:
 
 **hg38.main.chrom.sizes**: chromosome sizes for the primary chromosomes of the hg38 genome
 
-**hg38.dfam.fa.out**: Dfam repeat annotations for hg38, used to determine the relative position of each L2 fragment within its consensus sequence
+**hg38.dfam.fa.out**: Repeat annotations for hg38 from dfam.org, used to determine the relative position of each L2 fragment within its consensus sequence
 
 **hg38.dfam.info** [optional]: repeat divergence information for each TE subfamily
 
@@ -57,7 +57,7 @@ Identifies which TE loci in the human genome contain polyadenylation sites, and 
 
 This analysis requires the following files, or equivalent:
 
-**hg38.dfam.ucsc.filtered.bed**: BED file containing annotation of human repeats from Dfam, downloaded from the UCSC genome browser track hub for hg38.
+**hg38.dfam.ucsc.filtered.bed**: BED file containing annotation of human repeats from dfam.org
 
 **gencode.v47.simple.bed**: simplified BED of GENCODE v47 gene annotations, derived from the BED file on UCSC.
 
