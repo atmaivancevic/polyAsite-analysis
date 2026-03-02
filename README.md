@@ -11,7 +11,7 @@
 
 ### 1. PAS expression analysis
 
-Identifies L2 subfamily elements in the human genome that contain expressed polyadenylation sites (PAS), in order to visualize PAS signal enrichment at the 3' end.
+Identifies L2 subfamily elements in the human genome that contain expressed polyadenylation sites (PAS), in order to visualize PAS signal enrichment.
 
 - [polyasite_download_and_convert.sbatch](PAS_expression_analysis/polyasite_download_and_convert.sbatch)
 - [L2_overlap_PAS.sbatch](PAS_expression_analysis/L2_overlap_PAS.sbatch)
