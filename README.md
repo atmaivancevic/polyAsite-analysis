@@ -34,7 +34,7 @@ This analysis requires the following files, or equivalent:
 
 ### 2. PAS motif analysis
 
-Identifies canonical polyadenylation signal hexamers across the human genome using FIMO, independent of expression data, and visualizes their enrichment in L2 elements. Used as an unbiased complement to the PolyASite expression-based analysis.
+Identifies canonical polyadenylation signal hexamers across the human genome using FIMO, independent of expression data, and visualizes their enrichment in L2 elements. Used as an unbiased complement to the PolyASite expression analysis.
 
 - [fimo.sbatch](PAS_motif_analysis/fimo.sbatch), which uses [canonical_PAS.meme](PAS_motif_analysis/canonical_PAS.meme)
 - [deeptools_heatmap.sbatch](PAS_motif_analysis/deeptools_heatmap.sbatch) to generate [L2s_with_canonical_PAS.pdf](PAS_motif_analysis/L2s_with_canonical_PAS.pdf)
